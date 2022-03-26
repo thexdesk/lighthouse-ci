@@ -17,7 +17,9 @@
     "build:watch": "parcel watch ./src/ui/index.html --public-url=/app",
     "build:source-map-explorer": "npm run clean && npm run build && ../../scripts/source-map-explorer.sh",
     "build:storybook": "build-storybook --no-dll",
-    "start:storybook": "start-storybook -p 6006 --no-dll"
+    "start:storybook": "start-storybook -p 6006 --no-dll",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@lhci/utils": "0.1.0",
@@ -27,7 +29,8 @@
     "morgan": "^1.9.1",
     "sequelize": "^4.44.3",
     "umzug": "^2.2.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -40,5 +43,6 @@
   },
   "alias": {
     "isomorphic-fetch": "clsx"
-  }
+  },
+  "snyk": true
 }
