@@ -21,11 +21,11 @@
   },
   "dependencies": {
     "@lhci/utils": "0.1.0",
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.3",
     "compression": "^1.7.4",
-    "express": "^4.16.4",
+    "express": "^4.21.2",
     "morgan": "^1.9.1",
-    "sequelize": "^4.44.3",
+    "sequelize": "^6.33.0",
     "umzug": "^2.2.0",
     "uuid": "^3.3.2"
   },
